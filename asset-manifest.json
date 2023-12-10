@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e6c13ad2.css",
+    "main.js": "/static/js/main.2a389190.js",
+    "static/media/hatches.png": "/static/media/hatches.1a0cd0f945d8e8d85b38.png",
+    "static/media/lego-blocks.jpg": "/static/media/lego-blocks.b2593397731d9959d01a.jpg",
+    "static/media/tree.jpg": "/static/media/tree.99246de40c60466fedba.jpg",
+    "static/media/pen-and-note.jpg": "/static/media/pen-and-note.3436c62ce5fa2823a14d.jpg",
+    "static/media/Swimmer.gif": "/static/media/Swimmer.a5ba8977209abdd4dd48.gif",
+    "static/media/service-analisys.jpg": "/static/media/service-analisys.e332099b7872599af3a7.jpg",
+    "static/media/app-logos.png": "/static/media/app-logos.5400f963a5dc5e60c6ae.png",
+    "static/media/solve-logic.png": "/static/media/solve-logic.e49504a5f07fde18dd2b.png",
+    "static/media/questions.jpg": "/static/media/questions.715c47a3ee8ea29a00ed.jpg",
+    "static/media/logo.png": "/static/media/logo.4597e7df724e97a0c5a1.png",
+    "static/media/vertical-line.png": "/static/media/vertical-line.bed76c8c52d216db76b4.png",
+    "index.html": "/index.html",
+    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
+    "main.2a389190.js.map": "/static/js/main.2a389190.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.2a389190.js"
+  ]
+}
