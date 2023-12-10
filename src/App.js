@@ -1,5 +1,12 @@
+import { AppProvider } from 'providers/App';
+import { Home } from 'routes/App';
+
 function App() {
-  return <div className="App"></div>;
+  return (
+    <AppProvider>
+      <Home />
+    </AppProvider>
+  );
 }
 
 export default App;
