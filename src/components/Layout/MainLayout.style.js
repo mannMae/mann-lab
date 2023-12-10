@@ -1,7 +1,12 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.main`
+  position: relative;
+  z-index: -1;
+
   display: flex;
+
+  background-color: #fcfbf9;
 `;
 
 export const Inner = styled.section`
