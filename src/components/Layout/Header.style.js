@@ -7,15 +7,14 @@ export const Wrapper = styled.header`
 
   height: 60px;
 
-  display: flex;
   flex-direction: column;
   align-items: center;
 
   background-color: #fff;
 
-  opacity: 0;
+  display: none;
   @media (max-width: 700px) {
-    opacity: 1;
+    display: flex;
   }
 `;
 

@@ -1,10 +1,10 @@
 import { AppProvider } from 'providers/App';
-import { Home } from 'routes/App';
+import { AppRoutes } from 'routes/App';
 
 function App() {
   return (
     <AppProvider>
-      <Home />
+      <AppRoutes />
     </AppProvider>
   );
 }

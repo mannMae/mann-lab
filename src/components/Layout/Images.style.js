@@ -21,6 +21,7 @@ export const Item = styled.li`
   width: 100%;
   height: 100%;
 
+  background-color: ${(props) => props.backgroundColor};
   opacity: ${(props) => props.opacity};
   transition: 0.5s;
 

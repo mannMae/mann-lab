@@ -17,7 +17,11 @@ export const Images = ({ index }) => {
       {articles.map((article, i) => {
         console.log(article.image);
         return (
-          <Item opacity={i === index ? 1 : 0} key={i}>
+          <Item
+            opacity={i === index ? 1 : 0}
+            key={i}
+            backgroundColor={article.backgroundColor}
+          >
             <Image src={article.image} width={article.width && article.width} />
             {article?.animation && (
               <Animtaion source={article?.animation} isAnimate={i === index} />
@@ -40,6 +44,7 @@ const articles = [
   {
     image: Swimmer,
     animation: Fish,
+    backgroundColor: '#fcfbf9',
   },
   {
     image: SolveLogic,

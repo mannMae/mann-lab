@@ -5,15 +5,14 @@ export const Wrapper = styled.nav`
   top: 0;
   left: 0;
 
-  opacity: 0;
+  display: none;
   @media (min-width: 700px) {
     width: 20vw;
-    opacity: 1;
+    display: flex;
   }
 
   height: 100vh;
 
-  display: flex;
   justify-content: space-between;
 `;
 

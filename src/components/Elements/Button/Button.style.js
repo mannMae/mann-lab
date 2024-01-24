@@ -10,6 +10,9 @@ export const Wrapper = styled.button`
   padding: 0;
 
   overflow: hidden;
+
+  cursor: pointer;
+
   &:hover {
     background-image: ${(props) => `url(${props.hatches})`};
     background-size: cover;
