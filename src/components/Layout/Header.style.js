@@ -5,9 +5,11 @@ export const Wrapper = styled.header`
   top: 0;
   left: 0;
 
+  width: 100%;
   height: 60px;
 
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 
   background-color: #fff;

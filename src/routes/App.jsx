@@ -1,4 +1,4 @@
-import { Apps } from 'features/apps';
+import { AppsRoutes } from 'features/apps';
 import { Home, Portfolio, About } from 'features/misc';
 import { ResearchRoutes } from 'features/researches/routes';
 import { Navigate, useRoutes } from 'react-router-dom';
@@ -10,7 +10,7 @@ export const AppRoutes = () => {
     { path: '/portfolio', element: <Portfolio /> },
     {
       path: '/apps',
-      element: <Apps />,
+      element: <AppsRoutes />,
     },
     {
       path: '/researches',

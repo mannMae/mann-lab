@@ -1,5 +1,4 @@
-import { Button } from 'components/Elements';
-import { Line } from './Line';
+import { Button, Line } from 'components/Elements';
 import { Buttons, Inner, Logo, Wrapper } from './SideNavigation.style';
 
 import logo from 'assets/images/logo.png';
@@ -27,7 +26,7 @@ export const SideNavigation = () => {
           ))}
         </Buttons>
       </Inner>
-      <Line isHorizontal={false} height="100vh" />
+      <Line isHorizontal={false} />
     </Wrapper>
   );
 };

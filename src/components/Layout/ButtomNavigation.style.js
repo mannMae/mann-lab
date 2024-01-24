@@ -10,8 +10,10 @@ export const Wrapper = styled.nav`
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 
+  padding-bottom: 10px;
   background-color: #fff;
 
   opacity: 0;

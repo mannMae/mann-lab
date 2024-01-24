@@ -1,10 +1,10 @@
 import { routes } from 'configurations';
 import { Inner, Wrapper, Button } from './ButtomNavigation.style';
-import { Line } from './Line';
 import { useState } from 'react';
 
-import hatches from 'assets/images/hatches.png';
+import hatches from 'assets/images/theme/hatches.png';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { Line } from 'components/Elements';
 
 export const ButtomNavigation = () => {
   const [selectedUrl, setSelectedUrl] = useState('/');

@@ -1,4 +1,6 @@
 import {
+  IoFlask,
+  IoFlaskOutline,
   IoHome,
   IoHomeOutline,
   IoNewspaper,
@@ -6,7 +8,6 @@ import {
 } from 'react-icons/io5';
 import { TbAppWindow, TbAppWindowFilled } from 'react-icons/tb';
 import { PiUserListFill, PiUserList } from 'react-icons/pi';
-import { IoSearchCircleOutline, IoSearchCircle } from 'react-icons/io5';
 
 export const routes = [
   {
@@ -32,6 +33,6 @@ export const routes = [
   {
     name: 'RESEARCHES',
     url: '/researches',
-    icons: [<IoSearchCircleOutline size="20" />, <IoSearchCircle size="20" />],
+    icons: [<IoFlaskOutline size="20" />, <IoFlask size="20" />],
   },
 ];

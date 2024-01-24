@@ -1,6 +1,6 @@
 import { Inner, Wrapper } from './Button.style';
 
-import hatches from 'assets/images/hatches.png';
+import hatches from 'assets/images/theme/background-hatches-primary.png';
 
 export const Button = ({ children, isSelected, startIcon, onClick }) => {
   return (

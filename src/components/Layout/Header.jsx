@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import { Inner, Logo, Wrapper } from './Header.style';
-import { Line } from './Line';
 
 import logo from 'assets/images/logo.png';
+import { Line } from 'components/Elements';
 
 export const Header = () => {
   const navigate = useNavigate();
