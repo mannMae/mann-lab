@@ -9,7 +9,7 @@ export const AppRoutes = () => {
     { path: '/about', element: <About /> },
     { path: '/portfolio', element: <Portfolio /> },
     {
-      path: '/apps',
+      path: '/papps/*',
       element: <AppsRoutes />,
     },
     {

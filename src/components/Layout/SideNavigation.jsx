@@ -8,7 +8,6 @@ import { useLocation, useNavigate } from 'react-router-dom';
 export const SideNavigation = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  console.log(location);
   return (
     <Wrapper>
       <Inner>
@@ -20,6 +19,10 @@ export const SideNavigation = () => {
               startIcon={route.icons[0]}
               isSelected={location.pathname === route.url ? true : false}
               onClick={() => navigate(route.url)}
+              height="40px"
+              width="130px"
+              justifyContent="start"
+              padding="0 0 0 10px"
             >
               {route.name}
             </Button>

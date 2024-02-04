@@ -1,3 +1,5 @@
+export * from './AppLayout';
+
 export * from './Images';
 
 export * from './MainLayout';

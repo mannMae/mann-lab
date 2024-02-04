@@ -5,7 +5,7 @@ export const Wrapper = styled.button`
   justify-content: center;
   align-items: center;
 
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: ${(props) => props.border};
   border-radius: 20px;
   padding: 0;
 
@@ -20,13 +20,15 @@ export const Wrapper = styled.button`
 `;
 
 export const Inner = styled.div`
-  height: 40px;
-  width: 130px;
+  width: ${(props) => props.width};
+  height: ${(props) => props.height};
 
   display: flex;
-  justify-content: center;
+  justify-content: ${(props) => props.justifyContent};
   align-items: center;
   gap: 15px;
+
+  padding: ${(props) => props.padding};
 
   background-color: ${(props) =>
     props.isSelected ? 'rgba(0,0,0,0.6)' : 'transparent'};

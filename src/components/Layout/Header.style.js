@@ -9,18 +9,35 @@ export const Wrapper = styled.header`
   height: 60px;
 
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 
   background-color: #fff;
 
-  display: none;
+  display: ${(props) => (props.isAppHeader ? 'flex' : 'none')};
   @media (max-width: 700px) {
     display: flex;
   }
 `;
 
-export const Inner = styled.div``;
+export const Inner = styled.div`
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const Column = styled.div`
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: ${(props) => props.justifyContent};
+  padding: 15px;
+`;
+
+export const Title = styled.h2`
+  font-size: 22px;
+`;
 
 export const Logo = styled.img`
   width: 50px;

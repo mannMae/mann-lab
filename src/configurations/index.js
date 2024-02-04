@@ -26,8 +26,8 @@ export const routes = [
     icons: [<IoNewspaperOutline size="20" />, <IoNewspaper size="20" />],
   },
   {
-    name: 'APPS',
-    url: '/apps',
+    name: 'P.APPS',
+    url: '/papps',
     icons: [<TbAppWindow size="20" />, <TbAppWindowFilled size="20" />],
   },
   {

@@ -7,7 +7,7 @@ export const Apps = () => {
     <>
       <MainLayout>
         <Wrapper>
-          <Title>앱 목록</Title>
+          <Title>프라이빗 앱 목록</Title>
           <Applist />
         </Wrapper>
       </MainLayout>
