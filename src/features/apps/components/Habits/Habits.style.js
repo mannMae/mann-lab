@@ -18,11 +18,8 @@ export const CategoryName = styled.h5`
   font-size: 16px;
 `;
 
-export const CategoryList = styled.ul`
-  list-style: dotted;
-`;
+export const CategoryList = styled.ul``;
 
-export const CategoryListItem = styled.li`
-  margin: 10px 0 0 25px;
-  font-size: 16px;
-`;
+export const CategoryListItem = styled.li``;
+
+export const TextInput = styled.input``;

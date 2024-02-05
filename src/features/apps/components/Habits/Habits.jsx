@@ -4,34 +4,59 @@ import {
   CategoryList,
   CategoryListItem,
   CategoryName,
+  Checkbox,
+  TextInput,
   Title,
-  TodayHabits,
   Wrapper,
 } from './Habits.style';
 import { useState } from 'react';
 import { PiPenBold } from 'react-icons/pi';
+import { IoCalendar } from 'react-icons/io5';
+import { useDispatch } from 'react-redux';
+import { HabitStacksSlice } from 'features/apps/slice';
+import { Form, InputField } from 'components/Form';
+import { Habit } from './Habit';
 
-export const Habits = ({ list, isToday, date }) => {
+export const Habits = ({ habits, isToday, date }) => {
   const [isShowing, setIsShowing] = useState(false);
+
   return (
     <Wrapper>
       <Button
-        startIcon={<PiPenBold size="20" />}
+        startIcon={isToday ? <PiPenBold size="20" /> : <IoCalendar size="20" />}
         onClick={() => setIsShowing((prev) => !prev)}
         padding="5px"
       >
         <Title>{isToday ? '오늘' : date}</Title>
       </Button>
-      {isShowing && (
-        <Category>
-          <CategoryName>매일 할 일</CategoryName>
-          <CategoryList>
-            {list.map((item, i) => (
-              <CategoryListItem key={i}>{item}</CategoryListItem>
-            ))}
-          </CategoryList>
-        </Category>
-      )}
+      {isToday
+        ? isShowing && (
+            <Category>
+              <CategoryName>매일 할 일</CategoryName>
+              <CategoryList listStyle={'none'}>
+                {habits.map((habit, i) => (
+                  <CategoryListItem key={i}>
+                    <Habit index={i} habit={habit} />
+                  </CategoryListItem>
+                ))}
+                <CategoryListItem>
+                  <Habit />
+                </CategoryListItem>
+              </CategoryList>
+            </Category>
+          )
+        : isShowing && (
+            <Category>
+              <CategoryName>매일 할 일</CategoryName>
+              <CategoryList>
+                {habits.map((habit, i) => (
+                  <CategoryListItem key={i}>
+                    <Habit index={i} habit={habit} />
+                  </CategoryListItem>
+                ))}
+              </CategoryList>
+            </Category>
+          )}
     </Wrapper>
   );
 };
