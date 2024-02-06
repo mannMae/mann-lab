@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, current } from '@reduxjs/toolkit';
 
 export const HabitStacksSlice = createSlice({
   name: 'habitStacks',
@@ -26,7 +26,8 @@ export const HabitStacksSlice = createSlice({
       state.todayHabits[action.payload.index].content = action.payload.content;
     },
     deleteTodayHabit(state, action) {
-      const habits = state.todayHabits.filter((a) => a);
+      const habits = current(state.todayHabits).filter((a) => a);
+      console.log(habits);
       state.todayHabits = habits.filter((p, i) => {
         return i !== action.payload.index;
       });
