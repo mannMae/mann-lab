@@ -1,4 +1,4 @@
-import { Wrapper } from './Careers.style';
+import { Wrapper } from './Experiences.style';
 
 export const Experiences = () => {
   return <Wrapper>Experiences</Wrapper>;

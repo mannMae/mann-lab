@@ -2,6 +2,7 @@ import {
   Body,
   Description,
   Header,
+  HorizontalLine,
   Image,
   Subtitle,
   Title,
@@ -9,16 +10,18 @@ import {
   Wrapper,
 } from './Introduction.style';
 
+import primaryHacthes from 'assets/images/theme/background-hatches-primary.png';
+
 export const Introduction = () => {
   return (
     <Wrapper>
       <Header>
-        <TitleWrapper>
+        <TitleWrapper hatches={primaryHacthes}>
           <Title>김재만</Title>
           <Subtitle>듣는 것을 좋아하는 개발자</Subtitle>
         </TitleWrapper>
-        {/* <Line /> */}
       </Header>
+      <HorizontalLine hatches={primaryHacthes} />
       <Body>
         <Image src="https://velog.velcdn.com/images/mannmae/profile/e338cb0c-6f03-4634-a0f7-fa1a26ac72ea/image.jpeg" />
         <Description>
