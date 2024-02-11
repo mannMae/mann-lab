@@ -6,6 +6,7 @@ export const Wrapper = styled.main`
   display: flex;
 
   background-color: #fff;
+  height: 100vh;
 `;
 
 export const Inner = styled.section`
@@ -16,8 +17,9 @@ export const Inner = styled.section`
   }
 
   @media (max-width: 700px) {
-    margin: 60px 0;
+    padding: 60px 0;
   }
 
   width: 100%;
+  height: 100%;
 `;
